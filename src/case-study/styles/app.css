@@ -1,0 +1,326 @@
+/* colors */
+/* sizes */
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  font-family: 'Krub';
+  font-size: 100%;
+  background: #1B1B20;
+  color: #fff;
+}
+
+.container {
+  width: 78.25%;
+  max-width: 55.28em;
+  margin: 0 auto;
+  margin: auto;
+}
+
+.container--small {
+  width: 63.25%;
+  max-width: 40.28em;
+}
+
+::-moz-selection {
+  background: #fff;
+  color: #191919;
+}
+
+::selection {
+  background: #fff;
+  color: #191919;
+}
+
+/* header */
+.menu__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  width: 82vw;
+  left: 6vw;
+  top: 70px;
+  z-index: 100;
+}
+
+.menu__list--link a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.tfa {
+  color: #40BFAC;
+  text-decoration: none;
+  transition: border-bottom 0.3s ease-out 0s;
+  border-bottom: 0.2em solid #40BFAC;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.tfa:hover {
+  border-bottom: 0.3em solid #40BFAC;
+}
+
+.menu__image {
+  background-image: url(../assets/images/interface.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: translate3d(0, -12vh, 0);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  width: 100%;
+  height: 85vh;
+}
+
+.menu__title {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 7em;
+  opacity: 0.75;
+}
+
+/* logo */
+
+.img__logo {
+  width: 250px;
+  height: 200px;
+}
+
+.m--behind {
+  fill: none;
+  stroke: #40BFAC;
+  stroke-miterlimit: 10;
+}
+
+.m--ahead {
+  fill: #fff;
+}
+
+/* case study */
+.project__info {
+  float: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.project__period {
+  width: 50%;
+}
+
+.project__dev--imageXS {
+  width: 100%;
+  height: 60vh;
+}
+
+.project__dev--imageXL {
+  width: 100%;
+  height: 85vh;
+}
+
+.project__intro,
+.project__dev--imageXL,
+.project__design,
+.project__adobe,
+.project__wireframes,
+.project__concept,
+.project__changement,
+.project__integration,
+.project__conclusion,
+.project__final,
+.project__credits,
+.project__dev--imageXS,
+.footer {
+  margin-top: 150px;
+}
+
+.project__dev--text,
+.project__list {
+  line-height: 1.7;
+  color: #898989;
+  padding: 0;
+}
+
+.project__list--links {
+  font-weight: bold;
+  color: #898989;
+}
+
+.project__dev--title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.project__description{
+  margin-bottom: 7%;
+    max-width: 60%;
+    margin-left: 18%;
+}
+
+/* footer */
+.footer {
+  padding-bottom: 5%;
+}
+
+.footer__list {
+  color: #898989;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 10%;
+  font-size: 0.9em;
+}
+
+.footer__list--el:first-child {
+  width: 100%;
+  margin: auto;
+}
+
+.footer__list--el:last-child {
+  width: 8%;
+  margin: auto;
+}
+
+.footer__list a {
+  color: #898989;
+}
+
+.footer__list a:nth-child(odd) {
+  color: #898989;
+}
+
+.footer__list a:nth-child(2) {
+  color: #898989;
+}
+
+/* general */
+a:visited {
+  color: #fff;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .project__dev--imageXS {
+    width: 100%;
+    height: 100%;
+  }
+  .project__dev--imageXL {
+    width: 100%;
+    height: 100%;
+  }
+  .project__period {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project__period {
+    margin-top: 50px;
+    margin-top: 3.125rem;
+    width: 100%;
+  }
+  .menu__list--link a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project__intro {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .project__period {
+    width: 100%;
+  }
+  .project__dev--imageXS {
+    width: 100%;
+    height: 100%;
+  }
+  .project__dev--imageXL {
+    width: 100%;
+    height: 100%;
+  }
+  .menu__image {
+    height: 40vh;
+    background-size: contain;
+  }
+  .footer__list {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer__list--el:last-child {
+    width: 20%;
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .menu__image {
+    height: 40vh;
+    background-size: cover;
+  }
+  .menu__title {
+    font-size: 5em;
+    margin-top: 1em;
+  }
+  .menu__list--link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .project__dev--title {
+    font-size: 1.5em;
+  }
+  .project__dev--text {
+    font-size: 1.3em;
+  }
+  .footer__list {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer__list--el:last-child {
+    width: 20%;
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 56.28em;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
